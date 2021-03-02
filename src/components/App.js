@@ -12,13 +12,13 @@ class App extends Component {
 	
  showPara = () =>{
     this.setState( {isParaShow : true});
- }
+ };
     render() {
     	return(
     		<div id="main">
 				<button id = "click" onClick ={this.showPara}>Show Para</button>
 				{ this.state.isParaShow ?( <p id = "para"> Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy
-</p>): null }
+                </p>): null }
     		</div>
     	);
     }
