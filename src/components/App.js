@@ -5,12 +5,12 @@ class App extends Component {
     constructor(props) {
 		super(props);
 		this.state ={
-			isParaShow : false 
+			isParaShow : false ,
 		};
 		this.showPara = this.showPara.bind(this);
 	}
 	
- showPara = () =>{
+ showPara = () => {
     this.setState( {isParaShow : true});
  };
     render() {
@@ -18,7 +18,7 @@ class App extends Component {
     		<div id="main">
 				<button id = "click" onClick = {this.showPara}> Show Paragraph </button>
 				{ this.state.isParaShow ? ( <p id = "para">
-					 Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy
+				Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy
 				</p> 
 				) :  null }
     		</div>
